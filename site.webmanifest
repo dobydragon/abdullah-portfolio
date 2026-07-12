@@ -1,0 +1,13 @@
+{
+  "name": "Abdullah Rafat — Flutter Developer",
+  "short_name": "Abdullah Rafat",
+  "description": "Portfolio of Abdullah Rafat Sayed Mohammed, Mid-Level Flutter Developer.",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#0a0b16",
+  "theme_color": "#6d5efc",
+  "icons": [
+    { "src": "assets/icons/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "assets/icons/icon-512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}

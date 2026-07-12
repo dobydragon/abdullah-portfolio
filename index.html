@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Abdullah Rafat — Flutter Developer | Portfolio</title>
+<meta name="description" content="Abdullah Rafat Sayed Mohammed — Mid-Level Flutter Developer in Cairo, Egypt with 3+ years building production mobile apps in Flutter & Dart: HR platforms, humanitarian apps, geofenced attendance, payroll, real-time chat, full English/Arabic RTL." />
+<meta name="keywords" content="Abdullah Rafat, Flutter Developer, Dart, Mobile App Developer, Cairo Egypt, Firebase, Odoo, Bloc, Cubit, Arabic RTL, El Sewedy, Zad HR, Aman, portfolio" />
+<meta name="author" content="Abdullah Rafat Sayed Mohammed" />
+<link rel="canonical" href="https://dobydragon.github.io/abdullah-portfolio/" />
+<meta name="theme-color" content="#6d5efc" />
+
+<!-- Open Graph -->
+<meta property="og:type" content="profile" />
+<meta property="og:title" content="Abdullah Rafat — Flutter Developer | Portfolio" />
+<meta property="og:description" content="Mid-Level Flutter Developer · 3+ years · production apps in Flutter & Dart with full English/Arabic RTL. HR, humanitarian & fintech-grade mobile products." />
+<meta property="og:locale" content="en_US" />
+<meta property="og:locale:alternate" content="ar_EG" />
+<meta property="og:url" content="https://dobydragon.github.io/abdullah-portfolio/" />
+<meta property="og:image" content="assets/img/og-image.png" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Abdullah Rafat — Flutter Developer" />
+<meta name="twitter:description" content="Mid-Level Flutter Developer · 3+ years · production apps in Flutter & Dart with full English/Arabic RTL." />
+
+<link rel="icon" type="image/png" sizes="32x32" href="assets/icons/icon-32.png" />
+<link rel="apple-touch-icon" href="assets/icons/icon-180.png" />
+<link rel="manifest" href="site.webmanifest" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@600;700;800&display=swap" rel="stylesheet" />
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Abdullah Rafat Sayed Mohammed",
+  "jobTitle": "Flutter Developer",
+  "email": "mailto:abdullahrrafat@gmail.com",
+  "telephone": "+201094081241",
+  "url": "https://dobydragon.github.io/abdullah-portfolio/",
+  "address": { "@type": "PostalAddress", "addressLocality": "Cairo", "addressCountry": "Egypt" },
+  "alumniOf": { "@type": "CollegeOrUniversity", "name": "Modern Academy" },
+  "knowsAbout": ["Flutter", "Dart", "Mobile Development", "Firebase", "Odoo", "REST APIs", "Bloc", "Cubit", "Arabic RTL Localization"],
+  "sameAs": ["https://github.com/dobydragon"]
+}
+</script>
+
+<style>
+:root{
+  --violet:#6d5efc; --violet-600:#5a49f0; --violet-400:#8f83ff;
+  --cyan:#22d3ee; --cyan-deep:#06b6d4;
+  --mint:#34d399; --amber:#f5b544; --rose:#fb7185;
+  --ink:#f5f6ff; --text:#e7e9f5; --text-2:#b9bfda; --text-3:#8a90b3;
+  --bg:#0a0b16; --bg-2:#0f1122; --surface:#141733; --surface-2:#1b1f42;
+  --border:#262a52; --border-strong:#343a6e;
+  --grad-brand:linear-gradient(135deg,#6d5efc 0%,#8f5cff 45%,#22d3ee 130%);
+  --grad-accent:linear-gradient(135deg,var(--violet) 0%,var(--cyan) 100%);
+  --grad-text:linear-gradient(120deg,#8f83ff 0%,#22d3ee 60%,#34d399 100%);
+  --grad-hero:radial-gradient(1100px 620px at 82% -8%,rgba(109,94,252,.28),transparent 60%),
+              radial-gradient(900px 520px at -8% 8%,rgba(34,211,238,.18),transparent 55%);
+  --shadow-sm:0 1px 2px rgba(0,0,0,.4);
+  --shadow:0 10px 30px rgba(0,0,0,.42);
+  --shadow-lg:0 30px 70px rgba(0,0,0,.55);
+  --radius-sm:12px; --radius:18px; --radius-lg:26px; --radius-xl:34px;
+  --maxw:1180px; --gap:clamp(1rem,2.5vw,2rem);
+  --font:"Inter",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  --display:"Sora",var(--font);
+}
+:root[data-theme="light"]{
+  --ink:#0f1230; --text:#242a4a; --text-2:#4a5178; --text-3:#7a80a5;
+  --bg:#f6f7fd; --bg-2:#eef0fb; --surface:#ffffff; --surface-2:#f3f4fd;
+  --border:#e4e6f5; --border-strong:#d2d6ee;
+  --grad-hero:radial-gradient(1100px 620px at 82% -8%,rgba(109,94,252,.16),transparent 60%),
+              radial-gradient(900px 520px at -8% 8%,rgba(34,211,238,.14),transparent 55%);
+  --shadow-sm:0 1px 2px rgba(16,24,79,.06),0 1px 3px rgba(16,24,79,.05);
+  --shadow:0 12px 30px rgba(16,24,79,.10);
+  --shadow-lg:0 30px 70px rgba(16,24,79,.16);
+}
+@media (prefers-color-scheme:light){
+  :root:not([data-theme="dark"]){
+    --ink:#0f1230; --text:#242a4a; --text-2:#4a5178; --text-3:#7a80a5;
+    --bg:#f6f7fd; --bg-2:#eef0fb; --surface:#ffffff; --surface-2:#f3f4fd;
+    --border:#e4e6f5; --border-strong:#d2d6ee;
+    --grad-hero:radial-gradient(1100px 620px at 82% -8%,rgba(109,94,252,.16),transparent 60%),
+                radial-gradient(900px 520px at -8% 8%,rgba(34,211,238,.14),transparent 55%);
+    --shadow-sm:0 1px 2px rgba(16,24,79,.06),0 1px 3px rgba(16,24,79,.05);
+    --shadow:0 12px 30px rgba(16,24,79,.10);
+    --shadow-lg:0 30px 70px rgba(16,24,79,.16);
+  }
+}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;scroll-padding-top:82px;overflow-x:hidden}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation-duration:.001ms!important;transition-duration:.001ms!important}}
+body{margin:0;font-family:var(--font);color:var(--text);background:var(--bg);line-height:1.65;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+h1,h2,h3,h4{font-family:var(--display);line-height:1.14;color:var(--ink);font-weight:800;letter-spacing:-.02em;margin:0 0 .4em}
+p{margin:0 0 1em;color:var(--text-2)}
+:focus-visible{outline:3px solid var(--cyan);outline-offset:2px;border-radius:6px}
+.container{width:100%;max-width:var(--maxw);margin-inline:auto;padding-inline:clamp(1rem,4vw,2.4rem)}
+.section{padding-block:clamp(3.4rem,8vw,6.6rem);position:relative}
+.section--tint{background:var(--bg-2)}
+.eyebrow{display:inline-flex;align-items:center;gap:.5rem;font-size:.78rem;font-weight:700;letter-spacing:.13em;text-transform:uppercase;color:var(--cyan-deep);margin-bottom:1rem}
+.eyebrow::before{content:"";width:26px;height:2px;background:currentColor;border-radius:2px}
+.section-head{max-width:730px;margin-bottom:clamp(2rem,5vw,3.4rem)}
+.section-head.center{margin-inline:auto;text-align:center}
+.section-head.center .eyebrow{justify-content:center}
+h2.title{font-size:clamp(1.75rem,4.2vw,2.85rem)}
+.lead{font-size:clamp(1.02rem,1.6vw,1.18rem);color:var(--text-2)}
+.grad{background:var(--grad-text);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+
+/* progress */
+.progress{position:fixed;top:0;left:0;height:3px;width:0;background:var(--grad-accent);z-index:200;transition:width .1s linear}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.55rem;padding:.85rem 1.5rem;border-radius:999px;font-weight:700;font-size:.95rem;border:1.5px solid transparent;cursor:pointer;transition:transform .18s,box-shadow .18s,background .18s,color .18s,border-color .18s;white-space:nowrap}
+.btn:active{transform:translateY(1px) scale(.99)}
+.btn--primary{background:var(--grad-accent);color:#08111f;box-shadow:0 10px 26px rgba(109,94,252,.4)}
+.btn--primary:hover{box-shadow:0 16px 38px rgba(34,211,238,.42);transform:translateY(-2px)}
+.btn--ghost{background:transparent;color:var(--text);border-color:var(--border-strong)}
+.btn--ghost:hover{border-color:var(--cyan);color:var(--cyan)}
+
+/* header */
+.header{position:fixed;inset:0 0 auto 0;z-index:100;transition:background .3s,box-shadow .3s,border-color .3s;border-bottom:1px solid transparent}
+.header.scrolled{background:color-mix(in srgb,var(--surface) 82%,transparent);backdrop-filter:saturate(180%) blur(14px);-webkit-backdrop-filter:saturate(180%) blur(14px);border-color:var(--border);box-shadow:var(--shadow-sm)}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:1rem;height:70px}
+.brand{display:flex;align-items:center;gap:.65rem;font-family:var(--display);font-weight:800;color:var(--ink);letter-spacing:-.01em}
+.brand .mark{width:38px;height:38px;border-radius:11px;background:var(--grad-brand);display:grid;place-items:center;color:#fff;font-weight:800;font-size:1rem;box-shadow:0 6px 16px rgba(109,94,252,.45)}
+.brand small{display:block;font-family:var(--font);font-weight:500;font-size:.72rem;color:var(--text-3);letter-spacing:.02em}
+.nav__links{display:flex;align-items:center;gap:.3rem}
+.nav__links a{padding:.5rem .8rem;border-radius:10px;font-weight:600;font-size:.92rem;color:var(--text-2);transition:color .18s,background .18s}
+.nav__links a:hover{color:var(--ink);background:var(--surface-2)}
+.nav__actions{display:flex;align-items:center;gap:.5rem}
+.icon-btn{width:40px;height:40px;border-radius:11px;border:1.5px solid var(--border-strong);background:var(--surface);color:var(--text);display:grid;place-items:center;cursor:pointer;transition:border-color .18s,transform .18s}
+.icon-btn:hover{border-color:var(--cyan);transform:translateY(-1px)}
+.hamburger{display:none;flex-direction:column;gap:5px;width:42px;height:40px;border-radius:11px;border:1.5px solid var(--border-strong);background:var(--surface);cursor:pointer;align-items:center;justify-content:center}
+.hamburger span{width:20px;height:2px;background:var(--ink);border-radius:2px;transition:.25s}
+.hamburger.open span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.hamburger.open span:nth-child(2){opacity:0}
+.hamburger.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+@media(max-width:920px){
+  .nav__links{position:fixed;inset:70px 0 auto 0;flex-direction:column;align-items:stretch;gap:.2rem;background:color-mix(in srgb,var(--surface) 96%,transparent);backdrop-filter:blur(14px);padding:1rem;border-bottom:1px solid var(--border);transform:translateY(-140%);transition:transform .32s cubic-bezier(.4,0,.2,1);box-shadow:var(--shadow)}
+  .nav__links.open{transform:translateY(0)}
+  .nav__links a{padding:.85rem 1rem;font-size:1rem}
+  .hamburger{display:flex}
+  .nav .btn--primary.desk{display:none}
+}
+
+/* hero */
+.hero{position:relative;padding-top:clamp(6.5rem,14vw,9rem);padding-bottom:clamp(3rem,7vw,5rem);background:var(--grad-hero);overflow:hidden}
+.hero__grid{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(2rem,5vw,4rem);align-items:center}
+.badge{display:inline-flex;align-items:center;gap:.55rem;padding:.45rem .9rem;border-radius:999px;background:var(--surface);border:1px solid var(--border);font-size:.82rem;font-weight:600;color:var(--text-2);box-shadow:var(--shadow-sm)}
+.dot{width:9px;height:9px;border-radius:50%;background:var(--mint);box-shadow:0 0 0 0 rgba(52,211,153,.6);animation:pulse 2.4s infinite}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(52,211,153,.55)}70%{box-shadow:0 0 0 10px rgba(52,211,153,0)}100%{box-shadow:0 0 0 0 rgba(52,211,153,0)}}
+.hero h1{font-size:clamp(2.2rem,5.6vw,3.7rem);margin-top:1.1rem}
+.hero .lead{max-width:38ch;margin-block:1.1rem 1.6rem}
+.hero__cta{display:flex;flex-wrap:wrap;gap:.75rem}
+.hero__stats{display:grid;grid-template-columns:repeat(4,auto);gap:clamp(1.1rem,3vw,2.4rem);margin-top:2.4rem}
+.stat b{font-family:var(--display);display:block;font-size:clamp(1.5rem,3.4vw,2.1rem);color:var(--ink);line-height:1}
+.stat span{font-size:.82rem;color:var(--text-3);font-weight:600}
+@media(max-width:520px){.hero__stats{grid-template-columns:repeat(2,1fr);gap:1.4rem}}
+
+/* phones */
+.phones{position:relative;display:grid;place-items:center;min-height:500px}
+.hero__blob{position:absolute;width:420px;height:420px;border-radius:50%;background:var(--grad-brand);filter:blur(70px);opacity:.35;z-index:0}
+.phone{border-radius:34px;background:linear-gradient(160deg,#20244d,#0f1226);padding:9px;box-shadow:var(--shadow-lg);border:1px solid rgba(255,255,255,.08)}
+.phone img{border-radius:27px;width:236px;height:auto;display:block}
+.phone--main{position:relative;z-index:3;transform:rotate(-3deg);animation:floaty 6s ease-in-out infinite}
+.phone--back{position:absolute;z-index:2;transform:rotate(7deg) translate(60px,26px) scale(.92);opacity:.96;animation:floaty 6s ease-in-out infinite .6s}
+@keyframes floaty{0%,100%{translate:0 0}50%{translate:0 -14px}}
+.float-tag{position:absolute;z-index:4;display:inline-flex;align-items:center;gap:.5rem;padding:.55rem .85rem;border-radius:12px;background:var(--surface);border:1px solid var(--border);box-shadow:var(--shadow);font-size:.8rem;font-weight:700;color:var(--ink)}
+.float-tag.tl{top:8%;left:-6%}
+.float-tag.br{bottom:10%;right:-4%}
+.float-tag .d2{width:9px;height:9px;border-radius:50%}
+@media(max-width:920px){.hero__grid{grid-template-columns:1fr}.phones{margin-top:1rem;min-height:440px}.float-tag.tl{left:2%}.float-tag.br{right:2%}}
+@media(max-width:400px){.phone img{width:200px}}
+
+/* trust strip */
+.trust{border-top:1px solid var(--border);border-bottom:1px solid var(--border);background:var(--surface)}
+.trust__inner{display:flex;flex-wrap:wrap;align-items:center;gap:.7rem;padding-block:1.5rem}
+.trust__label{font-size:.8rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--text-3);margin-right:.6rem}
+.chip{display:inline-flex;align-items:center;gap:.45rem;padding:.45rem .85rem;border-radius:999px;background:var(--surface-2);border:1px solid var(--border);font-size:.85rem;font-weight:600;color:var(--text)}
+.chip svg{width:15px;height:15px;color:var(--mint);flex:none}
+
+/* generic grids/cards */
+.grid{display:grid;gap:clamp(1rem,2.4vw,1.6rem)}
+.grid-2{grid-template-columns:repeat(2,1fr)}
+.grid-3{grid-template-columns:repeat(3,1fr)}
+.grid-4{grid-template-columns:repeat(4,1fr)}
+@media(max-width:900px){.grid-3,.grid-4{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:600px){.grid-2,.grid-3,.grid-4{grid-template-columns:1fr}}
+.card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:1.6rem;transition:transform .22s,box-shadow .22s,border-color .22s;position:relative;overflow:hidden}
+.card:hover{transform:translateY(-4px);box-shadow:var(--shadow);border-color:var(--border-strong)}
+.card__icon{width:48px;height:48px;border-radius:13px;display:grid;place-items:center;background:var(--grad-accent);color:#0a0b16;margin-bottom:1rem}
+.card__icon svg{width:24px;height:24px}
+.card h3{font-size:1.12rem}
+.card p{font-size:.95rem;margin:0}
+
+/* about */
+.about{display:grid;grid-template-columns:1fr 1.35fr;gap:clamp(2rem,5vw,3.5rem);align-items:center}
+.about__photo{position:relative;border-radius:var(--radius-lg);background:var(--grad-brand);aspect-ratio:1/1.05;display:grid;place-items:center;box-shadow:var(--shadow-lg);overflow:hidden}
+.about__photo .initials{font-family:var(--display);font-weight:800;font-size:clamp(3rem,9vw,5.5rem);color:#fff;text-shadow:0 6px 30px rgba(0,0,0,.3)}
+.about__photo::after{content:"";position:absolute;inset:0;background:radial-gradient(circle at 30% 20%,rgba(255,255,255,.25),transparent 55%)}
+.mini{display:flex;gap:1.4rem;flex-wrap:wrap;margin-top:1.4rem}
+.mini div b{font-family:var(--display);display:block;color:var(--ink);font-size:1.25rem}
+.mini div span{font-size:.82rem;color:var(--text-3)}
+@media(max-width:820px){.about{grid-template-columns:1fr}.about__photo{max-width:280px}}
+
+/* timeline */
+.timeline{position:relative;margin-top:1rem;padding-left:0}
+.tl-item{position:relative;display:grid;grid-template-columns:180px 1fr;gap:1.6rem;padding-bottom:2.2rem}
+.tl-item:last-child{padding-bottom:0}
+.tl-when{font-family:var(--display);font-weight:700;color:var(--cyan);font-size:.95rem;padding-top:.1rem}
+.tl-when small{display:block;color:var(--text-3);font-weight:500;font-family:var(--font);font-size:.82rem}
+.tl-body{position:relative;padding-left:1.8rem;border-left:2px solid var(--border)}
+.tl-body::before{content:"";position:absolute;left:-9px;top:.35rem;width:16px;height:16px;border-radius:50%;background:var(--grad-accent);box-shadow:0 0 0 4px var(--bg)}
+.tl-body h3{font-size:1.15rem;margin-bottom:.15rem}
+.tl-role{color:var(--violet-400);font-weight:600;font-size:.92rem;margin-bottom:.6rem}
+.tl-body ul{margin:.4rem 0 0;padding-left:1.1rem}
+.tl-body li{margin-bottom:.35rem;font-size:.95rem;color:var(--text-2)}
+@media(max-width:640px){.tl-item{grid-template-columns:1fr;gap:.6rem}.tl-body{padding-left:1.4rem}}
+
+/* projects */
+.proj{display:flex;flex-direction:column;padding:0;overflow:hidden}
+.proj__media{position:relative;aspect-ratio:16/9;background:var(--grad-brand);display:grid;place-items:center;overflow:hidden}
+.proj__media .emoji{font-size:3rem;filter:drop-shadow(0 6px 16px rgba(0,0,0,.3))}
+.proj__media.shots{background:linear-gradient(135deg,#161f6e,#0d1226);padding:1.2rem;gap:.6rem;display:flex;align-items:flex-end;justify-content:center}
+.proj__media.shots img{width:auto;height:100%;border-radius:10px;box-shadow:0 12px 30px rgba(0,0,0,.4);border:1px solid rgba(255,255,255,.08)}
+.proj__media.shots img:nth-child(2){margin-bottom:14px}
+.proj__body{padding:1.5rem;display:flex;flex-direction:column;flex:1}
+.proj__body h3{font-size:1.2rem;margin-bottom:.2rem}
+.proj__tag{font-size:.82rem;font-weight:600;color:var(--text-3);margin-bottom:.7rem}
+.proj__body p{font-size:.93rem;flex:1}
+.tags{display:flex;flex-wrap:wrap;gap:.4rem;margin:.4rem 0 1rem}
+.tag{font-size:.74rem;font-weight:600;padding:.28rem .6rem;border-radius:7px;background:var(--surface-2);border:1px solid var(--border);color:var(--text-2)}
+.proj__links{display:flex;gap:.7rem;flex-wrap:wrap;margin-top:auto}
+.link{display:inline-flex;align-items:center;gap:.4rem;font-weight:700;font-size:.9rem;color:var(--cyan)}
+.link svg{width:15px;height:15px}
+.link.muted{color:var(--text-3);cursor:default}
+.status{position:absolute;top:.8rem;left:.8rem;display:inline-flex;align-items:center;gap:.4rem;padding:.35rem .7rem;border-radius:999px;font-size:.74rem;font-weight:700;backdrop-filter:blur(6px)}
+.status.live{background:rgba(52,211,153,.16);color:#6ee7b7;border:1px solid rgba(52,211,153,.4)}
+.status.progress{background:rgba(245,181,68,.16);color:#fbce6b;border:1px solid rgba(245,181,68,.4)}
+.status.shipped{background:rgba(143,131,255,.16);color:#b9b0ff;border:1px solid rgba(143,131,255,.4)}
+
+/* demo */
+.demo-wrap{display:grid;grid-template-columns:auto 1fr;gap:clamp(2rem,5vw,3.5rem);align-items:center}
+.video-phone{position:relative;border-radius:38px;background:linear-gradient(160deg,#20244d,#0f1226);padding:10px;box-shadow:var(--shadow-lg);border:1px solid rgba(255,255,255,.08);width:min(290px,80vw);margin-inline:auto}
+.video-phone video{border-radius:28px;width:100%;display:block;background:#000}
+.demo-list{list-style:none;padding:0;margin:1.2rem 0 0}
+.demo-list li{display:flex;gap:.7rem;align-items:flex-start;margin-bottom:.8rem;font-size:.98rem;color:var(--text-2)}
+.demo-list svg{width:20px;height:20px;color:var(--mint);flex:none;margin-top:.15rem}
+@media(max-width:820px){.demo-wrap{grid-template-columns:1fr}}
+
+/* contact */
+.contact-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-lg);padding:clamp(1.8rem,4vw,3rem);box-shadow:var(--shadow);text-align:center}
+.contact-methods{display:flex;flex-wrap:wrap;justify-content:center;gap:.8rem;margin-top:1.6rem}
+.cm{display:inline-flex;align-items:center;gap:.6rem;padding:.8rem 1.2rem;border-radius:14px;background:var(--surface-2);border:1px solid var(--border);font-weight:600;font-size:.92rem;color:var(--text);transition:transform .18s,border-color .18s}
+.cm:hover{transform:translateY(-2px);border-color:var(--cyan)}
+.cm svg{width:18px;height:18px;color:var(--cyan)}
+
+/* footer */
+.footer{background:var(--bg-2);border-top:1px solid var(--border);padding-block:2.4rem}
+.footer__inner{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:1rem}
+.footer small{color:var(--text-3)}
+.socials{display:flex;gap:.5rem}
+.socials a{width:40px;height:40px;border-radius:11px;border:1px solid var(--border);background:var(--surface);display:grid;place-items:center;color:var(--text-2);transition:transform .18s,color .18s,border-color .18s}
+.socials a:hover{transform:translateY(-2px);color:var(--cyan);border-color:var(--cyan)}
+.socials svg{width:18px;height:18px}
+
+/* reveal */
+[data-reveal]{opacity:0;transform:translateY(26px);transition:opacity .7s cubic-bezier(.2,.7,.2,1),transform .7s cubic-bezier(.2,.7,.2,1)}
+[data-reveal].in{opacity:1;transform:none}
+</style>
+</head>
+<body>
+<div class="progress" id="progress"></div>
+
+<!-- ============ HEADER ============ -->
+<header class="header" id="header">
+  <div class="container nav">
+    <a href="#top" class="brand" aria-label="Abdullah Rafat home">
+      <span class="mark">AR</span>
+      <span>Abdullah Rafat<small>Flutter Developer</small></span>
+    </a>
+    <nav class="nav__links" id="navLinks">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#demo">Demo</a>
+      <a href="#education">Education</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="nav__actions">
+      <button class="icon-btn" id="themeBtn" aria-label="Toggle theme" title="Toggle light/dark">
+        <svg id="themeIcon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path></svg>
+      </button>
+      <a href="#contact" class="btn btn--primary desk">Hire Me</a>
+      <button class="hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+<!-- ============ HERO ============ -->
+<section class="hero">
+  <div class="container hero__grid">
+    <div>
+      <span class="badge"><span class="dot"></span>Mid-Level Flutter Developer · Cairo, Egypt</span>
+      <h1>Building production <span class="grad">Flutter apps</span> people actually rely on.</h1>
+      <p class="lead">I'm Abdullah Rafat — 3+ years shipping cross-platform mobile products in Flutter &amp; Dart: HR platforms, humanitarian apps, geofenced attendance, payroll and real-time chat, with full English/Arabic RTL.</p>
+      <div class="hero__cta">
+        <a href="#projects" class="btn btn--primary">View Projects</a>
+        <a href="assets/Abdullah-Rafat-CV.pdf" class="btn btn--ghost" download>
+          <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"></path></svg>
+          Download CV
+        </a>
+      </div>
+      <div class="hero__stats">
+        <div class="stat"><b data-count="3" data-suffix="+">0</b><span>Years experience</span></div>
+        <div class="stat"><b data-count="7" data-suffix="+">0</b><span>Apps &amp; projects</span></div>
+        <div class="stat"><b data-count="2">0</b><span>Languages · EN/AR</span></div>
+        <div class="stat"><b data-count="3.6" data-decimals="1">0</b><span>University GPA</span></div>
+      </div>
+    </div>
+    <div class="phones">
+      <div class="hero__blob"></div>
+      <div class="phone phone--back"><img src="assets/screenshots/sewedy-home.png" alt="HR dashboard screen" loading="eager" width="236" height="510"></div>
+      <div class="phone phone--main"><img src="assets/screenshots/sewedy-checkout.png" alt="Geofenced attendance check-out screen" loading="eager" width="236" height="510"></div>
+      <span class="float-tag tl"><span class="d2" style="background:var(--mint)"></span>Live in production</span>
+      <span class="float-tag br"><span class="d2" style="background:var(--cyan)"></span>EN / AR · RTL</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TRUST ============ -->
+<div class="trust">
+  <div class="container trust__inner">
+    <span class="trust__label">My stack</span>
+    <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"></path></svg>Flutter</span>
+    <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"></path></svg>Dart</span>
+    <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"></path></svg>Bloc / Cubit</span>
+    <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"></path></svg>Firebase</span>
+    <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"></path></svg>Odoo Backend</span>
+    <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"></path></svg>REST / Dio</span>
+    <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"></path></svg>Git</span>
+  </div>
+</div>
+
+<!-- ============ ABOUT ============ -->
+<section class="section" id="about">
+  <div class="container about">
+    <div class="about__photo" data-reveal>
+      <span class="initials">AR</span>
+    </div>
+    <div data-reveal data-delay="120">
+      <span class="eyebrow">About me</span>
+      <h2 class="title">Flutter developer focused on real products, not demos.</h2>
+      <p>I build and maintain cross-platform mobile applications with Flutter &amp; Dart — from architecture and state management to backend integration, localization and release. Over the last 3 years I've delivered internal HR platforms, a humanitarian community app, and client work, always with clean, maintainable code and a strong eye for UX.</p>
+      <p>I care about the details that make an app feel trustworthy: correct geolocation, honest data, smooth dark mode, and genuinely complete Arabic (RTL) support — not an afterthought translation. I also teach Flutter, which keeps my fundamentals sharp and my code easy for teams to read.</p>
+      <div class="mini">
+        <div><b>Cairo, Egypt</b><span>Based &amp; available</span></div>
+        <div><b>EN / AR</b><span>Bilingual delivery</span></div>
+        <div><b>Full-time</b><span>+ freelance projects</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SKILLS ============ -->
+<section class="section section--tint" id="skills">
+  <div class="container">
+    <div class="section-head center" data-reveal>
+      <span class="eyebrow">What I do</span>
+      <h2 class="title">Skills &amp; capabilities</h2>
+      <p class="lead">The tools and practices I use to ship reliable mobile apps end to end.</p>
+    </div>
+    <div class="grid grid-4">
+      <div class="card" data-reveal>
+        <div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2.5"></rect><path d="M12 18h.01"></path></svg></div>
+        <h3>Flutter &amp; Dart</h3>
+        <p>Cross-platform apps for Android &amp; iOS from a single codebase — clean widgets, custom UI, animations and responsive layouts.</p>
+      </div>
+      <div class="card" data-reveal data-delay="80">
+        <div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 2 7l10 5 10-5-10-5Z"></path><path d="m2 17 10 5 10-5M2 12l10 5 10-5"></path></svg></div>
+        <h3>State &amp; Architecture</h3>
+        <p>Bloc / Cubit state management, clean layering, dependency injection and maintainable, testable project structure.</p>
+      </div>
+      <div class="card" data-reveal data-delay="160">
+        <div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7V4h16v3M9 20h6M12 4v16"></path></svg></div>
+        <h3>Backends &amp; APIs</h3>
+        <p>REST integration with Dio, Odoo backend, Firebase (auth, Firestore, messaging), token auth &amp; secure API handling.</p>
+      </div>
+      <div class="card" data-reveal data-delay="240">
+        <div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="10" r="3"></circle><path d="M12 2a8 8 0 0 0-8 8c0 5.25 8 12 8 12s8-6.75 8-12a8 8 0 0 0-8-8Z"></path></svg></div>
+        <h3>Geolocation</h3>
+        <p>GPS-geofenced attendance check-in/out with location validation and map-based flows.</p>
+      </div>
+      <div class="card" data-reveal>
+        <div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M2 12h20M12 2a15 15 0 0 1 0 20M12 2a15 15 0 0 0 0 20"></path></svg></div>
+        <h3>Localization &amp; RTL</h3>
+        <p>Full English/Arabic support with proper right-to-left layouts, formatting and mirrored UI.</p>
+      </div>
+      <div class="card" data-reveal data-delay="80">
+        <div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path></svg></div>
+        <h3>Theming &amp; Dark Mode</h3>
+        <p>Design-system theming with light/dark modes, brand palettes and pixel-consistent components.</p>
+      </div>
+      <div class="card" data-reveal data-delay="160">
+        <div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><path d="m22 4-10 10.01L9 11"></path></svg></div>
+        <h3>Notifications</h3>
+        <p>Push &amp; in-app notification flows with Firebase Cloud Messaging and structured event handling.</p>
+      </div>
+      <div class="card" data-reveal data-delay="240">
+        <div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18V5l12-2v13M9 9l12-2"></path><circle cx="6" cy="18" r="3"></circle><circle cx="18" cy="16" r="3"></circle></svg></div>
+        <h3>Mentoring</h3>
+        <p>Teaching Flutter &amp; Dart, code reviews, and guiding students through real-world projects.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ EXPERIENCE ============ -->
+<section class="section" id="experience">
+  <div class="container">
+    <div class="section-head" data-reveal>
+      <span class="eyebrow">Career</span>
+      <h2 class="title">Work experience</h2>
+      <p class="lead">Where I've built, shipped, and taught.</p>
+    </div>
+    <div class="timeline">
+      <div class="tl-item" data-reveal>
+        <div class="tl-when">01/2025 — Present<small>Full-time</small></div>
+        <div class="tl-body">
+          <h3>ZAD Solutions</h3>
+          <div class="tl-role">Flutter Developer</div>
+          <ul>
+            <li>Built an employee attendance app with geo-location tracking, integrated with an Odoo backend for attendance, payroll and payslips, plus multi-language support, dark mode and employee profiles.</li>
+            <li>Building an internal HR self-service app for El Sewedy Industries with GPS-geofenced attendance check-in/out, leave &amp; permission requests, payroll statements and an org chart — full English/Arabic (RTL).</li>
+            <li>Developed <strong>Aman</strong>, a humanitarian Flutter &amp; Firebase platform helping refugees and newcomers integrate — community groups with real-time chat, appointment booking for psychological support, and legal-rights resources with full RTL.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="tl-item" data-reveal data-delay="100">
+        <div class="tl-when">2024 — 2025<small>Company</small></div>
+        <div class="tl-body">
+          <h3>Arab DT</h3>
+          <div class="tl-role">Flutter Developer</div>
+          <ul>
+            <li>Developed and maintained Flutter mobile applications and collaborated with cross-functional teams.</li>
+            <li>Ensured app performance and quality; identified and fixed bugs across releases.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="tl-item" data-reveal data-delay="180">
+        <div class="tl-when">2024 — Present<small>Part-time</small></div>
+        <div class="tl-body">
+          <h3>MASA Academy</h3>
+          <div class="tl-role">Flutter Instructor</div>
+          <ul>
+            <li>Designed practical projects to strengthen learning and application of Flutter &amp; Dart.</li>
+            <li>Provided mentorship and guidance, helping students build real-world mobile applications.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROJECTS ============ -->
+<section class="section section--tint" id="projects">
+  <div class="container">
+    <div class="section-head center" data-reveal>
+      <span class="eyebrow">Portfolio</span>
+      <h2 class="title">Selected projects</h2>
+      <p class="lead">Real apps I've designed and built. Each live case study has its own full portfolio site.</p>
+    </div>
+    <div class="grid grid-3">
+
+      <!-- Sewedy Sawa -->
+      <article class="card proj" data-reveal>
+        <div class="proj__media shots">
+          <span class="status progress"><span class="dot" style="width:8px;height:8px;background:#f5b544"></span>In progress</span>
+          <img src="assets/screenshots/sewedy-checkout.png" alt="El Sewedy attendance check-out" loading="lazy">
+          <img src="assets/screenshots/sewedy-payroll.png" alt="El Sewedy payroll" loading="lazy">
+        </div>
+        <div class="proj__body">
+          <h3>El Sewedy · Sawa</h3>
+          <div class="proj__tag">Internal HR self-service · ZAD Solutions</div>
+          <p>Employee app for El Sewedy Industries: GPS-geofenced attendance check-in/out, leave &amp; permission requests, payroll statements and an org chart — with full English/Arabic RTL.</p>
+          <div class="tags"><span class="tag">Flutter</span><span class="tag">Cubit</span><span class="tag">Dio</span><span class="tag">Geolocation</span></div>
+          <div class="proj__links">
+            <a class="link" href="https://dobydragon.github.io/elsewedy-sawa-portfolio/" target="_blank" rel="noopener">Live case study
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"></path></svg></a>
+            <a class="link" href="#demo">Watch demo</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Zad HR -->
+      <article class="card proj" data-reveal data-delay="80">
+        <div class="proj__media" style="background:linear-gradient(135deg,#001e54,#0a3a8f)">
+          <span class="status live"><span class="dot" style="width:8px;height:8px"></span>Live</span>
+          <span class="emoji">🏢</span>
+        </div>
+        <div class="proj__body">
+          <h3>Zad HR</h3>
+          <div class="proj__tag">Multi-tenant HR platform · Odoo backend</div>
+          <p>Employee attendance app with geo-location tracking, integrated with an Odoo backend for attendance, payroll and payslips — plus multi-language support, dark mode and employee profiles.</p>
+          <div class="tags"><span class="tag">Flutter</span><span class="tag">Bloc/Cubit</span><span class="tag">Odoo</span><span class="tag">Firebase</span></div>
+          <div class="proj__links">
+            <a class="link" href="https://dobydragon.github.io/zad-hr-portfolio/" target="_blank" rel="noopener">Live case study
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"></path></svg></a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Aman -->
+      <article class="card proj" data-reveal data-delay="160">
+        <div class="proj__media" style="background:linear-gradient(135deg,#0f766e,#14b8a6)">
+          <span class="status live"><span class="dot" style="width:8px;height:8px"></span>Live</span>
+          <span class="emoji">🤝</span>
+        </div>
+        <div class="proj__body">
+          <h3>Aman</h3>
+          <div class="proj__tag">Humanitarian platform · Flutter + Firebase</div>
+          <p>Helps refugees and newcomers integrate: community groups with real-time chat, appointment booking for psychological support, and legal-rights resources — with a fully RTL multi-language interface.</p>
+          <div class="tags"><span class="tag">Flutter</span><span class="tag">Firebase</span><span class="tag">Realtime chat</span><span class="tag">RTL</span></div>
+          <div class="proj__links">
+            <a class="link" href="https://dobydragon.github.io/aman-portfolio/" target="_blank" rel="noopener">Live case study
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"></path></svg></a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Restaurant apps -->
+      <article class="card proj" data-reveal>
+        <div class="proj__media" style="background:linear-gradient(135deg,#b45309,#f59e0b)">
+          <span class="status progress"><span class="dot" style="width:8px;height:8px;background:#fff"></span>In progress</span>
+          <span class="emoji">🍽️</span>
+        </div>
+        <div class="proj__body">
+          <h3>Restaurant Suite</h3>
+          <div class="proj__tag">Freelance · 5-app project</div>
+          <p>A freelance project delivering five connected Flutter applications for the restaurant space — currently in active development.</p>
+          <div class="tags"><span class="tag">Flutter</span><span class="tag">Dart</span><span class="tag">Freelance</span></div>
+          <div class="proj__links">
+            <span class="link muted">In development</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Arab DT -->
+      <article class="card proj" data-reveal data-delay="80">
+        <div class="proj__media" style="background:linear-gradient(135deg,#4338ca,#6d5efc)">
+          <span class="status shipped"><span class="dot" style="width:8px;height:8px;background:#b9b0ff"></span>Shipped</span>
+          <span class="emoji">📱</span>
+        </div>
+        <div class="proj__body">
+          <h3>Arab DT Apps</h3>
+          <div class="proj__tag">Client mobile applications</div>
+          <p>Developed and maintained Flutter mobile applications with cross-functional teams — focused on performance, quality, and fixing bugs across releases.</p>
+          <div class="tags"><span class="tag">Flutter</span><span class="tag">Maintenance</span><span class="tag">QA</span></div>
+          <div class="proj__links">
+            <span class="link muted">Client work</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Blind Assistant Glasses -->
+      <article class="card proj" data-reveal data-delay="160">
+        <div class="proj__media" style="background:linear-gradient(135deg,#155e75,#22d3ee)">
+          <span class="status shipped"><span class="dot" style="width:8px;height:8px;background:#fff"></span>Grade A+</span>
+          <span class="emoji">🕶️</span>
+        </div>
+        <div class="proj__body">
+          <h3>Blind Assistant Glasses</h3>
+          <div class="proj__tag">Graduation project · Modern Academy</div>
+          <p>Assistive technology graduation project helping visually-impaired users navigate their surroundings. Awarded an <strong>A+</strong> project grade.</p>
+          <div class="tags"><span class="tag">Assistive tech</span><span class="tag">Mobile</span><span class="tag">Award A+</span></div>
+          <div class="proj__links">
+            <span class="link muted">Academic project</span>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ DEMO ============ -->
+<section class="section" id="demo">
+  <div class="container">
+    <div class="section-head center" data-reveal>
+      <span class="eyebrow">Live demo</span>
+      <h2 class="title">See it running</h2>
+      <p class="lead">A short walkthrough of the El Sewedy "Sawa" HR app I'm building — real device, real data.</p>
+    </div>
+    <div class="demo-wrap">
+      <div class="video-phone" data-reveal>
+        <video src="assets/video/sewedy-demo.mp4" poster="assets/video/sewedy-poster.jpg" controls playsinline preload="none" muted></video>
+      </div>
+      <div data-reveal data-delay="120">
+        <h3 style="font-size:1.4rem">El Sewedy · Sawa — employee self-service</h3>
+        <ul class="demo-list">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"></path></svg>Swipe-to-check-out attendance with live geofence validation.</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"></path></svg>Payroll statements with a clear salary breakdown.</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"></path></svg>Company org chart and rich employee profiles.</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"></path></svg>Seamless English ⇄ Arabic (RTL) switching and dark mode.</li>
+        </ul>
+        <a href="https://dobydragon.github.io/elsewedy-sawa-portfolio/" target="_blank" rel="noopener" class="btn btn--ghost" style="margin-top:.4rem">
+          Open full case study
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"></path></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ EDUCATION ============ -->
+<section class="section section--tint" id="education">
+  <div class="container">
+    <div class="section-head center" data-reveal>
+      <span class="eyebrow">Background</span>
+      <h2 class="title">Education</h2>
+    </div>
+    <div class="grid grid-2" style="max-width:900px;margin-inline:auto">
+      <div class="card" data-reveal>
+        <div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10 12 5 2 10l10 5 10-5Z"></path><path d="M6 12v5c0 1 2.7 2.5 6 2.5s6-1.5 6-2.5v-5"></path></svg></div>
+        <h3>B.Sc. Computer Science</h3>
+        <p style="margin-bottom:.6rem">Modern Academy University · 2019 – 2023</p>
+        <div class="tags"><span class="tag">Grade: Very Good</span><span class="tag">GPA 3.6</span></div>
+      </div>
+      <div class="card" data-reveal data-delay="100">
+        <div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"></circle><path d="M8.2 13.9 7 22l5-3 5 3-1.2-8.1"></path></svg></div>
+        <h3>Graduation Project</h3>
+        <p style="margin-bottom:.6rem">"Blind Assistant Glasses" — assistive technology for the visually impaired.</p>
+        <div class="tags"><span class="tag">Project grade: A+</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="section" id="contact">
+  <div class="container">
+    <div class="contact-card" data-reveal>
+      <span class="eyebrow" style="justify-content:center;display:flex">Get in touch</span>
+      <h2 class="title">Let's build something great</h2>
+      <p class="lead" style="max-width:560px;margin-inline:auto">Open to full-time roles and freelance Flutter projects. The fastest way to reach me is email or phone.</p>
+      <div class="contact-methods">
+        <a class="cm" href="mailto:abdullahrrafat@gmail.com">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"></rect><path d="m22 6-10 7L2 6"></path></svg>
+          abdullahrrafat@gmail.com
+        </a>
+        <a class="cm" href="tel:+201094081241">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3.1-8.7A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.4-1.4a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2Z"></path></svg>
+          +20 010 9408 1241
+        </a>
+        <a class="cm" href="https://github.com/dobydragon" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2A10 10 0 0 0 8.8 21.5c.5.1.7-.2.7-.5v-1.7c-2.8.6-3.4-1.3-3.4-1.3-.5-1.2-1.1-1.5-1.1-1.5-.9-.6.1-.6.1-.6 1 .1 1.5 1 1.5 1 .9 1.5 2.3 1.1 2.9.8.1-.6.3-1.1.6-1.4-2.2-.2-4.6-1.1-4.6-4.9 0-1.1.4-2 1-2.7-.1-.3-.4-1.3.1-2.7 0 0 .8-.3 2.7 1a9.4 9.4 0 0 1 5 0c1.9-1.3 2.7-1 2.7-1 .5 1.4.2 2.4.1 2.7.6.7 1 1.6 1 2.7 0 3.8-2.4 4.7-4.6 4.9.3.3.6.9.6 1.9v2.8c0 .3.2.6.7.5A10 10 0 0 0 12 2Z"></path></svg>
+          github.com/dobydragon
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="container footer__inner">
+    <small>© <span id="year">2026</span> Abdullah Rafat Sayed Mohammed · Flutter Developer · Cairo, Egypt</small>
+    <div class="socials">
+      <a href="mailto:abdullahrrafat@gmail.com" aria-label="Email"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"></rect><path d="m22 6-10 7L2 6"></path></svg></a>
+      <a href="https://github.com/dobydragon" target="_blank" rel="noopener" aria-label="GitHub"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2A10 10 0 0 0 8.8 21.5c.5.1.7-.2.7-.5v-1.7c-2.8.6-3.4-1.3-3.4-1.3-.5-1.2-1.1-1.5-1.1-1.5-.9-.6.1-.6.1-.6 1 .1 1.5 1 1.5 1 .9 1.5 2.3 1.1 2.9.8.1-.6.3-1.1.6-1.4-2.2-.2-4.6-1.1-4.6-4.9 0-1.1.4-2 1-2.7-.1-.3-.4-1.3.1-2.7 0 0 .8-.3 2.7 1a9.4 9.4 0 0 1 5 0c1.9-1.3 2.7-1 2.7-1 .5 1.4.2 2.4.1 2.7.6.7 1 1.6 1 2.7 0 3.8-2.4 4.7-4.6 4.9.3.3.6.9.6 1.9v2.8c0 .3.2.6.7.5A10 10 0 0 0 12 2Z"></path></svg></a>
+      <a href="tel:+201094081241" aria-label="Phone"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3.1-8.7A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.4-1.4a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2Z"></path></svg></a>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  // theme
+  var root=document.documentElement, tb=document.getElementById('themeBtn');
+  function setTheme(t){root.setAttribute('data-theme',t);try{localStorage.setItem('theme',t)}catch(e){}}
+  try{var saved=localStorage.getItem('theme');if(saved)setTheme(saved)}catch(e){}
+  tb.addEventListener('click',function(){setTheme(root.getAttribute('data-theme')==='dark'?'light':'dark')});
+
+  // header + progress
+  var header=document.getElementById('header'), prog=document.getElementById('progress');
+  function onScroll(){
+    var y=window.scrollY||document.documentElement.scrollTop;
+    header.classList.toggle('scrolled',y>10);
+    var h=document.documentElement.scrollHeight-window.innerHeight;
+    prog.style.width=(h>0?(y/h*100):0)+'%';
+  }
+  window.addEventListener('scroll',onScroll,{passive:true}); onScroll();
+
+  // mobile nav
+  var burger=document.getElementById('hamburger'), links=document.getElementById('navLinks');
+  burger.addEventListener('click',function(){var o=links.classList.toggle('open');burger.classList.toggle('open',o)});
+  links.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){links.classList.remove('open');burger.classList.remove('open')})});
+
+  // reveal
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){var d=e.target.getAttribute('data-delay')||0;setTimeout(function(){e.target.classList.add('in')},d);io.unobserve(e.target)}})},{threshold:.14,rootMargin:'0px 0px -8% 0px'});
+  document.querySelectorAll('[data-reveal]').forEach(function(el){io.observe(el)});
+
+  // counters
+  function animateCount(el){
+    var target=parseFloat(el.getAttribute('data-count')),
+        dec=parseInt(el.getAttribute('data-decimals')||'0',10),
+        suf=el.getAttribute('data-suffix')||'', start=null, dur=1400;
+    function step(ts){if(!start)start=ts;var p=Math.min((ts-start)/dur,1);
+      var val=(target*(0.5-Math.cos(p*Math.PI)/2));
+      el.textContent=val.toFixed(dec)+(p===1?suf:'');
+      if(p<1)requestAnimationFrame(step);else el.textContent=target.toFixed(dec)+suf;}
+    requestAnimationFrame(step);
+  }
+  var cio=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){animateCount(e.target);cio.unobserve(e.target)}})},{threshold:.6});
+  document.querySelectorAll('[data-count]').forEach(function(el){cio.observe(el)});
+
+  // year
+  document.getElementById('year').textContent=(new Date()).getFullYear();
+})();
+</script>
+</body>
+</html>
